@@ -12,8 +12,9 @@ gpio.setcfg(port.PA7, gpio.OUTPUT)
 #now we do something (light up the LED)
 
 for i in range(5):
+    sleep(1)
     gpio.output(port.PA7, gpio.HIGH)
 
     #turn off the LED after 2 seconds
-    sleep(2)
+    sleep(1)
     gpio.output(port.PA7, gpio.LOW)
